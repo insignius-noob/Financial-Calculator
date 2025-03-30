@@ -7,6 +7,10 @@ user_db = {
     'mutaal': {
         'name':"Abdul Mutaal Aashi",
         'password': "$2b$12$s3EdGLD/ExFt47JY1EmlIuaONGqSjN/iBnH/HQFA9ibN9bIMLTOk."
+    },
+    'guest': {
+        'name': "Guest User",
+        'password': '$2b$12$y4r4dXvGIorH3nC3407Ts.WPJfsS4RpvKKXvzXsUG5y8wspfmTjBi' 
     }
 }
 
