@@ -10,7 +10,7 @@ st.sidebar.header('Enter your financial details')
 
 annual_cashflow = st.sidebar.number_input("💵 Annual Cash Flow (PKR)", min_value=0.0, value=10000.0, step=1000.0)
 interest_rate = st.sidebar.slider("📊 Annual Interest Rate (%)", min_value=0.1, max_value=20.0, value=5.0, step=0.1)
-years_to_visualize = st.sidebar.slider("📆 Visualize for how many years (optional)", min_value=1, max_value=60, value=20)
+years_to_visualize = 50
 
 if interest_rate > 0:
     perpetuity_value = annual_cashflow/(interest_rate/100)
@@ -25,17 +25,17 @@ if interest_rate > 0:
 
 
     fig = go.Figure()
-    fig.add_trace(go.Bar(x=years, y=cash_flow, name='Cash Flow')) 
-    fig.add_trace(go.Scatter(x=years, y=cumulative_cashflow, mode='lines+markers', name='Cumulative Cash Received'))
+    fig.add_trace(go.Scatter(x=years, y=cash_flow, mode='lines', name='Cash Flow')) 
 
     fig.update_layout(
-        title='Estimated Perpetuity Cashflow',
+        title='Constant Perpetuity Cashflow Overtime',
         xaxis_title='Years',
         yaxis_title='Cashflow (PKR)',
         template='plotly_white'
     )
 
     st.plotly_chart(fig, use_container_width=True)
-
+    st.caption("♾️ This graph shows the first 50 years of cash flows to represent perpetuity visually.")
+    st.caption("⚠️ It is important to note that this is a constant cash flow generation in equal interval of time but for unlimited time periods.")
 else:
     st.warning("⚠️ Interest rate must be greater than 0 to calculate perpetuity value.")
