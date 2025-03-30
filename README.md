@@ -26,6 +26,16 @@ It also includes a **secure login and sign-up system**, so users must log in to 
 - Calculates the **present value** of a stream of cash flows that goes on _forever_ (called a "perpetuity").
 - Visualizes the cash flow and total received over time in a bar + line chart.
 
+- 📉 Interest Rate vs Present Value Graph
+  In the Perpetuity Calculator, we've added an extra visualization showing how the present value of a perpetuity decreases as the interest rate increases.
+- This graph helps users understand the inverse relationship between:
+
+  - 📈 Interest Rate
+  - 💰 Present Value of infinite cash flows
+
+- The formula used is:
+  Present Value = Cash Flow ÷ Interest Rate
+
 ---
 
 ## 🔐 Login & Sign Up
