@@ -34,6 +34,13 @@ It also includes a **secure login and sign-up system**, so users must log in to 
 - Existing users can **log in securely** to access the app.
 - Passwords are securely **hashed** before storage for safety.
 
+### 🔐 Login Credentials
+
+You can use this app without signing up by using the **Guest Login**:
+
+- **Username:** `guest`
+- **Password:** `password123`
+
 ---
 
 ## 🚀 How to Run This App Locally
