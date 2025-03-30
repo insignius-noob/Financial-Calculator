@@ -26,7 +26,7 @@ if interest_rate > 0:
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=years, y=cash_flow, name='Cash Flow'))
-    fig.add_trace(go.Scatter(x=years, y=cumulative_cashflow, mode='lines+markers', name='Cumulative Cash Recieved'))
+    fig.add_trace(go.Bar(x=years, y=cumulative_cashflow, mode='lines+markers', name='Cumulative Cash Recieved'))
 
     fig.update_layout(
         title='Estimated Perpetuity Cashflow',
