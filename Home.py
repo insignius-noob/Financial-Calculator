@@ -5,7 +5,7 @@ st.set_page_config(page_title='Financial Dashboard', layout='wide')
 
 user_db = {
     'mutaal': {
-        'name':"Abdul Mutaal Aashi",
+        'name':"Abdul Mutaal Aashil",
         'password': "$2b$12$s3EdGLD/ExFt47JY1EmlIuaONGqSjN/iBnH/HQFA9ibN9bIMLTOk."
     },
     'guest': {
