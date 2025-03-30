@@ -7,4 +7,5 @@ st.markdown("Use this tool to calculate your savings over time")
 st.markdown("### 👉 Choose a Calculator from the Sidebar:")
 st.write("- 📈 Annuity Calculator")
 st.write("- ♾️ Perpetuity Calculator")
-st.image(r"C:\University\Semester 6\Financial Programming\Assignment 2\App\Home_Image.png", caption="Plan your future with confidence 💼", width=400)
+st.image("Home_Image.png")
+
